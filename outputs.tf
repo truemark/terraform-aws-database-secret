@@ -1,5 +1,5 @@
 output "password" {
-  value = join("", random_password.secret.*.result)
+  value     = join("", random_password.secret.*.result)
   sensitive = true
 }
 
