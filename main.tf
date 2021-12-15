@@ -4,7 +4,7 @@ resource "random_password" "secret" {
   special     = false
   min_upper   = 1
   min_lower   = 1
-  min_numeric = 1
+  min_numeric = 0
 }
 
 resource "aws_secretsmanager_secret" "secret" {
