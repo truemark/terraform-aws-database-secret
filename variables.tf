@@ -48,3 +48,9 @@ variable "connect_string" {
   type        = string
   default     = null
 }
+
+variable "include_numbers" {
+  description = "Whether or not to include numbers in the password."
+  type        = boolean
+  default     = false
+}
